@@ -1,0 +1,987 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #212529;
+  line-height: 1.6;
+  letter-spacing: 2px;
+}
+
+
+/* ヘッダー　*/
+
+header {
+  width: 100vw;
+  height: 70vh;
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+}
+
+header .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .menu h1 {
+  margin-left: 1em;
+}
+
+header .menu h1 img {
+  width: 160px;
+  height: 60px;
+}
+
+header .menu nav {
+  padding-right: 1em;
+}
+
+header .menu nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .menu nav ul li {
+  margin-left: 2.5em;
+}
+
+header .menu nav ul li a {
+  font-size: 1.6em;
+  color: #212529;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+header .menu nav ul li a::after {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #00b09b;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+
+header .menu nav ul li a:hover::after {
+  bottom: -10px;
+  opacity: 1;
+  visibility: visible;
+}
+
+header .menu p {
+  color: #f46b45;
+  font-size: 2em;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+header .menu p span {
+  display: block;
+  color: #212529;
+  font-size: .6em;
+}
+
+header .visual .bg-img {
+  width: auto;
+  height: 70vh;
+}
+
+header .visual p {
+  font-size: 3.4em;
+  font-weight: bold;
+  background: #fff;
+  padding: .2em;
+}
+
+header .visual .catch-1 {
+  position: absolute;
+  top: 130px;
+  right: 10%;
+}
+
+header .visual .catch-2 {
+  position: absolute;
+  top: 210px;
+  right: 10%;
+}
+
+header .visual .main {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+
+
+/* 共通　*/
+
+article {
+  width: 960px;
+  margin: 120px auto;
+}
+
+article h2 {
+  font-size: 2.8em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+article h2 span {
+  color: #00b09b;
+}
+
+section+section {
+  margin-top: 80px;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+
+/* トラブル　*/
+
+ul.trouble {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.trouble li {
+  width: 280px;
+  position: relative;
+}
+
+ul.trouble li img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+ul.trouble li h3 {
+  width: 280px;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  background: #00b09b;
+  padding: .5em;
+  text-align: center;
+  position: absolute;
+  top: 230px;
+  left: 0;
+}
+
+ul.trouble li p {
+  font-size: 1.6em;
+  margin-top: 1em;
+}
+
+
+/* 事例　*/
+
+.comparison, .data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.comparison img:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  -ms-border-radius: 20px 0 0 20px;
+  -o-border-radius: 20px 0 0 20px;
+}
+
+.comparison img:nth-child(2) {
+  border-radius: 0 20px 20px 0;
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+}
+
+.comparison {
+  position: relative;
+}
+
+.comparison::before {
+  content: "Before";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 50;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: .5em;
+}
+
+.comparison::after {
+  content: "After";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 50;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  background: #f46b45;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eea849, #f46b45);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: .5em;
+}
+
+.data {
+  margin-top: 40px;
+}
+
+.data h3 {
+  width: 25%;
+  font-size: 3em;
+  font-weight: bold;
+  margin-right: auto;
+  border-right: solid 1px #00b09b;
+}
+
+.data h3 span {
+  display: block;
+  font-size: .5em;
+  margin-top: 1em;
+}
+
+.data p {
+  width: 70%;
+  display: inline-block;
+  font-size: 1.6em;
+}
+
+
+/* 料金　*/
+
+.green {
+  background: #e8f6f5;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.orange {
+  background: #fff3e1;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.green h3 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: #00b09b;
+  padding: .5em;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+
+.orange h3 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background: #f46b45;
+  padding: .5em;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+
+.course {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4em;
+}
+
+.course figure img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.course figure figcaption {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.course .plus {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.green .price p {
+  font-size: 5em;
+  font-weight: bold;
+  color: #00b09b;
+  background: #fff;
+  border: solid 3px #00b09b;
+  padding: .5em;
+}
+
+.orange .price p {
+  font-size: 5em;
+  font-weight: bold;
+  color: #f46b45;
+  background: #fff;
+  border: solid 3px #f46b45;
+  padding: .5em;
+}
+
+.price p {
+  text-align: center;
+}
+
+.price p span {
+  font-size: .5em;
+}
+
+
+/* よくあるご質問 */
+
+.accordion-container {
+  font-size: 1.6em;
+}
+
+.accordion-container h3.article-title {
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  cursor: pointer;
+  border-bottom: solid 1px #00b09b;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-container h3.article-title span {
+  margin-right: .5em;
+  font-size: 2em;
+  font-weight: bold;
+  color: #00b09b;
+}
+
+.accordion-container h3.article-title::after {
+  content: "";
+  position: absolute;
+  right: 30px;
+  top: 40%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #00b09b;
+  border-right: solid 2px #00b09b;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.accordion-container h3.article-title.open::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 40%;
+}
+
+.accordion-container .accordion-content {
+  display: none;
+  padding: 2em 1em;
+  background: #e8f6f5;
+}
+
+
+/* アピール画像　*/
+
+.appeal {
+  width: 100%;
+  height: 400px;
+  background: #00b09b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #96c93d, #00b09b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+}
+
+.appeal p {
+  font-size: 3.4em;
+  font-weight: bold;
+  background: #fff;
+  padding: .2em;
+}
+
+.appeal .catch-1 {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  z-index: 2;
+}
+
+.appeal .catch-2 {
+  position: absolute;
+  top: 180px;
+  left: 10%;
+  z-index: 2;
+}
+
+.appeal img {
+  height: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+
+/* お申込みフォーム　*/
+
+.contact-text, .contact-form dt, .contact-form dd {
+  font-size: 1.6em;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+dl.contact-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: solid 1px #acacac;
+  padding: 2em;
+}
+
+dl.contact-form dt {
+  width: 40%;
+  font-weight: bold;
+}
+
+dl.contact-form dt span {
+  display: inline-block;
+  background: #f46b45;
+  color: #fff;
+  font-size: .6em;
+  font-weight: normal;
+  margin-right: 1em;
+  padding: .3em .6em;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+dl.contact-form dt span.any {
+  background: #00b09b;
+}
+
+dl.contact-form dd {
+  width: 60%;
+}
+
+dl.contact-form dd input[type="text"], dl.contact-form dd input[type="email"], dl.contact-form dd input[type="tel"] {
+  width: 100%;
+  height: 3em;
+  font-family: inherit;
+  font-size: inherit;
+  padding: .5em;
+}
+
+dl.contact-form dd .zip-code {
+  width: 30% !important;
+}
+
+dl.contact-form dd textarea {
+  width: 100%;
+  height: 8em;
+  font-family: inherit;
+  font-size: inherit;
+  padding: .5em;
+}
+
+dl.contact-form dd .radio-input {
+  display: none;
+}
+
+dl.contact-form dd .radio-input+label {
+  padding-left: 20px;
+  position: relative;
+  margin-right: 20px;
+}
+
+dl.contact-form dd .radio-input+label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #999;
+  border-radius: 50%;
+}
+
+dl.contact-form dd .radio-input:checked+label {
+  color: #f46b45;
+}
+
+dl.contact-form dd .radio-input:checked+label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  background: #f46b45;
+  border-radius: 50%;
+}
+
+.submit-box {
+  text-align: center;
+}
+
+.submit-btn {
+  -webkit-appearance: none;
+  background-color: #00b09b;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 2em;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 0.6em 2em;
+  text-decoration: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.submit-btn:hover, .submit-btn:focus {
+  outline: none;
+  background-color: #96c93d;
+}
+
+.submit-btn::-moz-foucus-inner {
+  border: none;
+  padding: 0;
+}
+
+
+/* フッター */
+
+footer {
+  width: 100%;
+  background: #e8f6f5;
+}
+
+footer ul.company {
+  padding-top: 2em;
+}
+
+footer ul.company li {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+footer ul.company li.name {
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+footer ul.company li.tel {
+  color: #f46b45;
+  font-size: 2.4em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+footer ul.company li.tel span {
+  display: block;
+  color: #212529;
+  font-size: .6em;
+  font-weight: normal;
+}
+
+footer p {
+  text-align: center;
+  padding: 1em 0;
+}
+
+
+/*アニメ―ションする要素を非表示にする*/
+
+.invisible {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+  /* ヘッダー　*/
+  header .menu p {
+    display: none;
+  }
+  header .menu p span {
+    display: block;
+    color: #212529;
+    font-size: .6em;
+  }
+  header .visual .bg-img {
+    height: 60vh;
+  }
+  header .visual p {
+    font-size: 2.8em;
+  }
+  header .visual .catch-1 {
+    top: 190px;
+    right: 5%;
+  }
+  header .visual .catch-2 {
+    top: 270px;
+    right: 5%;
+  }
+  header .visual .main {
+    width: 90%;
+    right: 5%;
+  }
+  /* 共通　*/
+  article {
+    width: 90%;
+    margin: 80px auto;
+  }
+  /* トラブル　*/
+  ul.trouble li {
+    width: 30%;
+  }
+  ul.trouble li img {
+    width: 100%;
+  }
+  ul.trouble li h3 {
+    width: 100%;
+    top: 180px;
+  }
+  ul.trouble li p {
+    margin-top: 4em;
+  }
+  /* 事例　*/
+  .comparison img {
+    width: 50%;
+  }
+  /* 料金　*/
+  .course figure img {
+    width: 150px;
+  }
+  /* アピール画像　*/
+  .appeal p {
+    font-size: 2.8em;
+  }
+  .appeal .catch-1 {
+    top: 160px;
+    left: 5%;
+  }
+  .appeal .catch-2 {
+    top: 240px;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* ヘッダー　*/
+  header {
+    width: 100vw;
+    height: 70vh;
+  }
+  header .menu h1 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .menu nav ul {
+    display: none;
+  }
+  header .visual .bg-img {
+    width: 100%;
+    height: auto;
+    margin-top: 4em;
+  }
+  header .visual p {
+    font-size: 1.2em;
+  }
+  header .visual .catch-1 {
+    top: 160px;
+    right: 0;
+  }
+  header .visual .catch-2 {
+    top: 200px;
+    right: 0;
+  }
+  header .visual .main {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  /* モバイルのみ　*/
+  .mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    background: #f46b45;
+  }
+  .mobile ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile ul li {
+    width: 50%;
+    padding: 1em;
+  }
+  .mobile ul li:nth-child(1) {
+    border-right: 1px solid #fff;
+  }
+  .mobile ul li a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 1.4em;
+    text-decoration: none;
+  }
+  .mobile ul li img {
+    width: 16px;
+    height: 16px;
+  }
+  /* 共通　*/
+  article {
+    width: 95%;
+    margin: 60px auto;
+  }
+  article h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+  section+section {
+    margin-top: 60px;
+  }
+  .pc-only {
+    display: none;
+  }
+  .sp-only {
+    display: block;
+  }
+  /* トラブル　*/
+  ul.trouble {
+    display: block;
+  }
+  ul.trouble li {
+    width: 100%;
+    text-align: center;
+  }
+  ul.trouble li+li {
+    margin-top: 60px;
+  }
+  ul.trouble li img {
+    width: 90%;
+  }
+  ul.trouble li h3 {
+    width: 100%;
+    font-size: 1.6em;
+    top: 50%;
+  }
+  ul.trouble li p {
+    margin-top: 1em;
+    text-align: justify;
+  }
+  /* 事例　*/
+  .comparison, .data {
+    display: block;
+  }
+  .comparison {
+    text-align: center;
+  }
+  .comparison img:nth-child(1) {
+    width: 90%;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+  }
+  .comparison img:nth-child(2) {
+    width: 90%;
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+  }
+  .comparison::before {
+    top: 20px;
+    left: 5%;
+    font-size: 1.6em;
+  }
+  .comparison::after {
+    top: 250px;
+    left: 5%;
+    right: auto;
+    font-size: 1.6em;
+  }
+  .data {
+    margin-top: 20px;
+  }
+  .data h3 {
+    width: 100%;
+    font-size: 3em;
+    font-weight: bold;
+    margin-right: auto;
+    border-right: none;
+    border-bottom: solid 1px #00b09b;
+  }
+  .data h3 span {
+    display: block;
+    margin-top: 0;
+    margin-bottom: .5em;
+  }
+  .data p {
+    width: 100%;
+    margin-top: .5em;
+  }
+  /* 料金　*/
+  .course {
+    display: block;
+    text-align: center;
+  }
+  .course figure img {
+    width: 80%;
+  }
+  .course figure {
+    text-align: center;
+  }
+  .green .price p, .orange .price p {
+    font-size: 3em;
+  }
+  /* アピール画像　*/
+  .appeal {
+    width: 100%;
+    height: 200px;
+  }
+  .appeal p {
+    font-size: 1.2em;
+  }
+  .appeal .catch-1 {
+    position: absolute;
+    top: 110px;
+    left: 0%;
+  }
+  .appeal .catch-2 {
+    position: absolute;
+    top: 140px;
+    left: 0%;
+  }
+  .appeal img {
+    height: 200px;
+  }
+  /* よくあるご質問 */
+  .accordion-container h3.article-title {
+    padding: 1em 1.5em 1em .5em;
+  }
+  .accordion-container h3.article-title::after {
+    right: 3%;
+  }
+  .accordion-container h3.article-title span {
+    margin-right: .3em;
+    font-size: 1.6em;
+  }
+  /* お申込みフォーム　*/
+  dl.contact-form {
+    display: block;
+  }
+  .contact-text, .contact-form dt, .contact-form dd {
+    font-size: 1.4em;
+  }
+  dl.contact-form dt {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  dl.contact-form dd {
+    width: 100%;
+  }
+  dl.contact-form dd .zip-code {
+    width: 40% !important;
+  }
+  .submit-btn {
+    font-size: 1.6em;
+  }
+  /* フッター　*/
+  footer {
+    margin-bottom: 2em;
+  }
+  footer ul.company li.name {
+    font-size: 2em;
+  }
+}
