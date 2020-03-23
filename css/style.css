@@ -396,7 +396,8 @@ ul.trouble li p {
 
 /* よくあるご質問 */
 
-.accordion-container {
+.accordion-container h3.article-title,
+.accordion-container .accordion-content {
   font-size: 1.6em;
 }
 
@@ -517,7 +518,7 @@ dl.contact-form dt span {
   display: inline-block;
   background: #f46b45;
   color: #fff;
-  font-size: .6em;
+  font-size: .8em;
   font-weight: normal;
   margin-right: 1em;
   padding: .3em .6em;
@@ -766,7 +767,7 @@ footer p {
     margin-top: 4em;
   }
   header .visual p {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   header .visual .catch-1 {
     top: 160px;
@@ -804,8 +805,9 @@ footer p {
     border-right: 1px solid #fff;
   }
   .mobile ul li a {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: auto;
     color: #fff;
@@ -813,8 +815,9 @@ footer p {
     text-decoration: none;
   }
   .mobile ul li img {
-    width: 16px;
-    height: 16px;
+    margin-left: .3em;
+    width: 20px;
+    height: 20px;
   }
   /* 共通　*/
   article {
@@ -846,15 +849,15 @@ footer p {
     margin-top: 60px;
   }
   ul.trouble li img {
-    width: 90%;
+    width: 70%;
   }
   ul.trouble li h3 {
     width: 100%;
-    font-size: 1.6em;
-    top: 50%;
+    font-size: 1.8em;
+    top: 40%;
   }
   ul.trouble li p {
-    margin-top: 1em;
+    margin-top: 10%;
     text-align: justify;
   }
   /* 事例　*/
@@ -881,12 +884,12 @@ footer p {
     -o-border-radius: 0 0 20px 20px;
   }
   .comparison::before {
-    top: 20px;
+    top: 5%;
     left: 5%;
     font-size: 1.6em;
   }
   .comparison::after {
-    top: 250px;
+    top: 53%;
     left: 5%;
     right: auto;
     font-size: 1.6em;
@@ -931,11 +934,11 @@ footer p {
     height: 200px;
   }
   .appeal p {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
   .appeal .catch-1 {
     position: absolute;
-    top: 110px;
+    top: 100px;
     left: 0%;
   }
   .appeal .catch-2 {
@@ -979,7 +982,7 @@ footer p {
   }
   /* フッター　*/
   footer {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
   }
   footer ul.company li.name {
     font-size: 2em;
