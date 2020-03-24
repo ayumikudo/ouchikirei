@@ -5,10 +5,14 @@
   box-sizing: border-box;
 }
 
-body {
+html {
   font-size: 62.5%;
-  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
   color: #212529;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2rem;
   line-height: 1.6;
   letter-spacing: 2px;
 }
@@ -64,7 +68,7 @@ header .menu nav ul li {
 }
 
 header .menu nav ul li a {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: #212529;
   position: relative;
   display: inline-block;
@@ -92,7 +96,7 @@ header .menu nav ul li a:hover::after {
 
 header .menu p {
   color: #f46b45;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   margin-right: 1em;
 }
@@ -100,7 +104,7 @@ header .menu p {
 header .menu p span {
   display: block;
   color: #212529;
-  font-size: .6em;
+  font-size: 1.4rem;
 }
 
 header .visual .bg-img {
@@ -109,7 +113,7 @@ header .visual .bg-img {
 }
 
 header .visual p {
-  font-size: 3.4em;
+  font-size: 3.4rem;
   font-weight: bold;
   background: #fff;
   padding: .2em;
@@ -117,20 +121,20 @@ header .visual p {
 
 header .visual .catch-1 {
   position: absolute;
-  top: 130px;
-  right: 10%;
+  top: 150px;
+  right: 5%;
 }
 
 header .visual .catch-2 {
   position: absolute;
-  top: 210px;
-  right: 10%;
+  top: 240px;
+  right: 5%;
 }
 
 header .visual .main {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: 5%;
 }
 
 
@@ -142,7 +146,7 @@ article {
 }
 
 article h2 {
-  font-size: 2.8em;
+  font-size: 2.8rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
@@ -187,7 +191,7 @@ ul.trouble li img {
 
 ul.trouble li h3 {
   width: 280px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #fff;
   background: #00b09b;
@@ -199,7 +203,7 @@ ul.trouble li h3 {
 }
 
 ul.trouble li p {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   margin-top: 1em;
 }
 
@@ -237,7 +241,7 @@ ul.trouble li p {
   top: 20px;
   left: 0;
   z-index: 50;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   background: #00b09b;
@@ -255,7 +259,7 @@ ul.trouble li p {
   top: 20px;
   right: 0;
   z-index: 50;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   background: #f46b45;
@@ -273,7 +277,7 @@ ul.trouble li p {
 
 .data h3 {
   width: 25%;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: bold;
   margin-right: auto;
   border-right: solid 1px #00b09b;
@@ -281,14 +285,14 @@ ul.trouble li p {
 
 .data h3 span {
   display: block;
-  font-size: .5em;
+  font-size: 1.2rem;
   margin-top: 1em;
 }
 
 .data p {
   width: 70%;
   display: inline-block;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 
@@ -313,7 +317,7 @@ ul.trouble li p {
 }
 
 .green h3 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   text-align: center;
@@ -327,7 +331,7 @@ ul.trouble li p {
 }
 
 .orange h3 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #fff;
   text-align: center;
@@ -357,18 +361,18 @@ ul.trouble li p {
 
 .course figure figcaption {
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-top: 1em;
 }
 
 .course .plus {
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: bold;
 }
 
 .green .price p {
-  font-size: 5em;
+  font-size: 5rem;
   font-weight: bold;
   color: #00b09b;
   background: #fff;
@@ -377,7 +381,7 @@ ul.trouble li p {
 }
 
 .orange .price p {
-  font-size: 5em;
+  font-size: 5rem;
   font-weight: bold;
   color: #f46b45;
   background: #fff;
@@ -390,7 +394,7 @@ ul.trouble li p {
 }
 
 .price p span {
-  font-size: .5em;
+  font-size: 1.6rem;
 }
 
 
@@ -398,7 +402,7 @@ ul.trouble li p {
 
 .accordion-container h3.article-title,
 .accordion-container .accordion-content {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .accordion-container h3.article-title {
@@ -413,7 +417,7 @@ ul.trouble li p {
 
 .accordion-container h3.article-title span {
   margin-right: .5em;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   color: #00b09b;
 }
@@ -461,7 +465,7 @@ ul.trouble li p {
 }
 
 .appeal p {
-  font-size: 3.4em;
+  font-size: 3rem;
   font-weight: bold;
   background: #fff;
   padding: .2em;
@@ -470,14 +474,14 @@ ul.trouble li p {
 .appeal .catch-1 {
   position: absolute;
   top: 100px;
-  left: 10%;
+  left: 5%;
   z-index: 2;
 }
 
 .appeal .catch-2 {
   position: absolute;
   top: 180px;
-  left: 10%;
+  left: 5%;
   z-index: 2;
 }
 
@@ -493,7 +497,7 @@ ul.trouble li p {
 /* お申込みフォーム　*/
 
 .contact-text, .contact-form dt, .contact-form dd {
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .contact-text {
@@ -518,7 +522,7 @@ dl.contact-form dt span {
   display: inline-block;
   background: #f46b45;
   color: #fff;
-  font-size: .8em;
+  font-size: 1.2rem;
   font-weight: normal;
   margin-right: 1em;
   padding: .3em .6em;
@@ -609,7 +613,7 @@ dl.contact-form dd .radio-input:checked+label::after {
   cursor: pointer;
   display: inline-block;
   font-family: inherit;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
   margin: 1em 0;
   padding: 0.6em 2em;
@@ -645,17 +649,17 @@ footer ul.company {
 
 footer ul.company li {
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 footer ul.company li.name {
-  font-size: 2.4em;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
 footer ul.company li.tel {
   color: #f46b45;
-  font-size: 2.4em;
+  font-size: 2.4rem;
   font-weight: bold;
   margin-top: 1em;
 }
@@ -663,7 +667,7 @@ footer ul.company li.tel {
 footer ul.company li.tel span {
   display: block;
   color: #212529;
-  font-size: .6em;
+  font-size: 1.4rem;
   font-weight: normal;
 }
 
@@ -693,7 +697,7 @@ footer p {
     height: 60vh;
   }
   header .visual p {
-    font-size: 2.8em;
+    font-size: 2.8rem;
   }
   header .visual .catch-1 {
     top: 190px;
@@ -736,7 +740,7 @@ footer p {
   }
   /* アピール画像　*/
   .appeal p {
-    font-size: 2.8em;
+    font-size: 2.8rem;
   }
   .appeal .catch-1 {
     top: 160px;
@@ -767,14 +771,14 @@ footer p {
     margin-top: 4em;
   }
   header .visual p {
-    font-size: 1.4em;
+    font-size: 1.6rem;
   }
   header .visual .catch-1 {
-    top: 160px;
+    top: 210px;
     right: 0;
   }
   header .visual .catch-2 {
-    top: 200px;
+    top: 250px;
     right: 0;
   }
   header .visual .main {
@@ -811,7 +815,7 @@ footer p {
     width: 100%;
     height: auto;
     color: #fff;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     text-decoration: none;
   }
   .mobile ul li img {
@@ -825,7 +829,7 @@ footer p {
     margin: 60px auto;
   }
   article h2 {
-    font-size: 2em;
+    font-size: 2rem;
     margin-bottom: 30px;
   }
   section+section {
@@ -849,12 +853,12 @@ footer p {
     margin-top: 60px;
   }
   ul.trouble li img {
-    width: 70%;
+    width: 210px;
   }
   ul.trouble li h3 {
     width: 100%;
-    font-size: 1.8em;
-    top: 40%;
+    font-size: 1.6rem;
+    top: 45%;
   }
   ul.trouble li p {
     margin-top: 10%;
@@ -886,20 +890,20 @@ footer p {
   .comparison::before {
     top: 5%;
     left: 5%;
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
   .comparison::after {
     top: 53%;
     left: 5%;
     right: auto;
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
   .data {
     margin-top: 20px;
   }
   .data h3 {
     width: 100%;
-    font-size: 3em;
+    font-size: 2.6rem;
     font-weight: bold;
     margin-right: auto;
     border-right: none;
@@ -926,7 +930,7 @@ footer p {
     text-align: center;
   }
   .green .price p, .orange .price p {
-    font-size: 3em;
+    font-size: 3rem;
   }
   /* アピール画像　*/
   .appeal {
@@ -934,16 +938,16 @@ footer p {
     height: 200px;
   }
   .appeal p {
-    font-size: 1.4em;
+    font-size: 1.6rem;
   }
   .appeal .catch-1 {
     position: absolute;
-    top: 100px;
+    top: 90px;
     left: 0%;
   }
   .appeal .catch-2 {
     position: absolute;
-    top: 140px;
+    top: 130px;
     left: 0%;
   }
   .appeal img {
@@ -958,14 +962,14 @@ footer p {
   }
   .accordion-container h3.article-title span {
     margin-right: .3em;
-    font-size: 1.6em;
+    font-size: 2rem;
   }
   /* お申込みフォーム　*/
   dl.contact-form {
     display: block;
   }
   .contact-text, .contact-form dt, .contact-form dd {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
   dl.contact-form dt {
     width: 100%;
@@ -978,13 +982,13 @@ footer p {
     width: 40% !important;
   }
   .submit-btn {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
   /* フッター　*/
   footer {
     margin-bottom: 4em;
   }
   footer ul.company li.name {
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
