@@ -779,11 +779,11 @@ footer p {
     font-size: 1.6rem;
   }
   header .visual .catch-1 {
-    top: 40%;
+    top: 30%;
     right: 0;
   }
   header .visual .catch-2 {
-    top: 50%;
+    top: 40%;
     right: 0;
   }
   header .visual .main {
@@ -863,7 +863,7 @@ footer p {
   ul.trouble li h3 {
     width: 100%;
     font-size: 1.6rem;
-    top: 45%;
+    top: 190px;
   }
   ul.trouble li p {
     margin-top: 10%;
