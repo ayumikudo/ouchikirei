@@ -22,7 +22,7 @@ body {
 
 header {
   width: 100vw;
-  height: 70vh;
+  height: 90vh;
   background: #00b09b;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #96c93d, #00b09b);
@@ -109,7 +109,7 @@ header .menu p span {
 
 header .visual .bg-img {
   width: auto;
-  height: 70vh;
+  height: 90vh;
 }
 
 header .visual p {
@@ -121,13 +121,13 @@ header .visual p {
 
 header .visual .catch-1 {
   position: absolute;
-  top: 150px;
+  top: 15%;
   right: 5%;
 }
 
 header .visual .catch-2 {
   position: absolute;
-  top: 240px;
+  top: 30%;
   right: 5%;
 }
 
@@ -685,6 +685,11 @@ footer p {
 
 @media only screen and (max-width: 960px) {
   /* ヘッダー　*/
+  header {
+    width: 100vw;
+    height: 60vh;
+}
+
   header .menu p {
     display: none;
   }
@@ -756,7 +761,7 @@ footer p {
   /* ヘッダー　*/
   header {
     width: 100vw;
-    height: 70vh;
+    height: 450px;
   }
   header .menu h1 {
     margin-left: auto;
@@ -774,11 +779,11 @@ footer p {
     font-size: 1.6rem;
   }
   header .visual .catch-1 {
-    top: 210px;
+    top: 40%;
     right: 0;
   }
   header .visual .catch-2 {
-    top: 250px;
+    top: 50%;
     right: 0;
   }
   header .visual .main {
